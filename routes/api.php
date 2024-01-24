@@ -32,7 +32,7 @@ Route::prefix('product')->group(function () {
     });
 
     Route::put('/{id}', function ($id) {
-        return "Unico actualizar ".$id;
+        return "Unico actualizar ".$id ;
     });
 
     Route::delete('/{id}', function ($id) {
