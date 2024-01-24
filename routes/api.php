@@ -27,11 +27,16 @@ Route::prefix('product')->group(function () {
         return "Unico ".$id;
     });
 
+    Route::post('/', function () {
+        return "Creado";
+    });
+
     Route::put('/{id}', function ($id) {
         return "Unico actualizar ".$id;
     });
 
-    Route::post('/', function () {
-        return "Creado";
+    Route::delete('/{id}', function ($id) {
+        return "Eliminado ".$id;
     });
+ 
 });
